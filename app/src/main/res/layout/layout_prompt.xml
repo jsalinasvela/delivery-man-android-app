@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_prompt"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/text_observation"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:gravity="left|top"
+        />
+
+    <LinearLayout
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:weightSum="2">
+        <LinearLayout
+            android:background="@color/colorSuccess"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/aceptar"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="horizontal" >0
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="Aceptar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/cancelar"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="cancelar"
+            android:orientation="horizontal" >
+            <TextView
+                android:gravity="center"
+                android:text="Cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
