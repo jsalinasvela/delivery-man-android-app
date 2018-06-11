@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/im_liner_bottom"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_product"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <CheckBox
+            android:id="@+id/check_product"
+            android:textSize="11dp"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1 SixPack Corona 225 ml c/u"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"/>
+
+        <TextView
+            android:id="@+id/price_product"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="S/ 14.00"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
