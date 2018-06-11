@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:padding="3dp"
+    android:background="@drawable/im_liner_bottom">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            fresco:roundedCornerRadius="30dp"
+            android:layout_centerInParent="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/denominacion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Numero de orden 1"
+            android:textSize="19dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/fecha_orden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textSize="9dp"></TextView>
+
+        <TextView
+            android:id="@+id/lista_orden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textSize="9dp"></TextView>
+
+        <TextView
+            android:id="@+id/distributor_id"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Distribuidor Asignado: "
+            android:textSize="11dp">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
